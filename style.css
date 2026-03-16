@@ -1,0 +1,132 @@
+/*Bases*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Iosevka Charon", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+h1{
+    font-weight: 700;
+}
+h2{
+    font-weight: 500;
+}
+
+/*Menu*/
+.menu-div{
+    background-color: #EE6F68;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    background-color: transparent;
+    border: 1px dashed #5E8D5A;
+    color: #5E8D5A;
+    font-size: 20px;
+    text-shadow:
+    -1px -1px 0 #F6B9AD,
+    1px -1px 0 #F6B9AD,
+    -1px 1px 0 #F6B9AD,
+    1px 1px 0 #F6B9AD; 
+    cursor: pointer;
+    font-weight: 700;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 3px 10px;
+}
+main{
+  margin-top: 200px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: justify;
+}
+
+/*Header*/
+.header-div{
+    position: absolute; 
+    width: 100%; 
+    height: 80px;
+    background-color: #F6B9AD;
+    color: #5E8D5A;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    max-height: 100px;
+}
+#focim{
+    position: fixed;
+    left: -100vw;
+    white-space: nowrap;
+    /* keep element centered when it reaches 50% */
+    transform: translateX(-50%);
+    animation: floatIn 1s ease-out forwards;
+}
+#alcim{
+    position: fixed;
+    left: -100vw;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    white-space: nowrap;
+    /* keep element centered when it reaches 50% */
+    transform: translateX(-50%);
+    animation: floatIn 1s ease-out forwards;
+}
+
+/*Animation*/
+@keyframes floatIn {
+    from { left: -100vw; }
+    to { left: 50%; }
+}
+
+/*Fonts*/
+.iosevka-charon-light {
+  font-family: "Iosevka Charon", monospace;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.iosevka-charon-regular {
+  font-family: "Iosevka Charon", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.iosevka-charon-medium {
+  font-family: "Iosevka Charon", monospace;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.iosevka-charon-bold {
+  font-family: "Iosevka Charon", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.iosevka-charon-light-italic {
+  font-family: "Iosevka Charon", monospace;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.iosevka-charon-regular-italic {
+  font-family: "Iosevka Charon", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.iosevka-charon-medium-italic {
+  font-family: "Iosevka Charon", monospace;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.iosevka-charon-bold-italic {
+  font-family: "Iosevka Charon", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
